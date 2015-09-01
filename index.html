@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700,300,900' rel='stylesheet' type='text/css'>
+    <link href="app/vendor/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/main.css" rel="stylesheet" />
+    <script src="app/vendor/angular/angular.min.js"></script>
+    <script src="app/vendor/angular-route/angular-route.min.js"></script>
+</head>
+<body ng-app="ReaderApp">
+<div class="header">
+    <div class="container">
+        Reader
+    </div>
+</div>
+
+<div class="main">
+    <div ng-view></div>
+    <div class="container">
+    </div>
+</div>
+
+<!-- Modules -->
+<script src="app/app.js"></script>
+
+<!-- Controllers -->
+<script src="app/controllers/BookshelfController.js"></script>
+<script src="app/controllers/BookController.js"></script>
+<script src="app/controllers/ChapterController.js"></script>
+
+<!-- Services -->
+<script src="app/services/books.js"></script>
+
+</body>
+</html>
